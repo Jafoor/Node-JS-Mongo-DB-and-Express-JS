@@ -55,3 +55,14 @@ By doing this, Node.js achives a few things:
 * `module` A reference to the current module.
 * `__dirname` The directory name of the current module. This is the same as the path.dirname() of the __filename. Ex: `console.log(__dirname)`
 * `__filename` The file name of the current module. This is the current module file's absolute path with symlinks resolved. Example: `console.log(__filename)`
+
+### `Path`
+The path module provides utilities for working with file and directory paths. It can be accessed using:
+`const path = require('path');`
+* `basename()` this method returns the last portion of a path, similar to the Unix basename command. Trailing directory separators are ignored. Syntax: `basename(path[,ext])` Example: `basename('/test/something.html', '.html')`
+
+* `dirname()` this method returns the directory name of the path. Syntax: `dirname(path)` Example: `dirname('/test/something.html')`
+Here is details on [NodePath]
+
+
+[NodePath]: https://www.w3schools.com/nodejs/ref_path.asp

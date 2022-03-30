@@ -1,0 +1,12 @@
+{
+  "name": "ch2",
+  "version": "1.0.0",
+  "description": "The path module provides utilities for working with file and directory paths. It can be accessed using: `const path = require('path');` * `basename()` this method returns the last portion of a path, similar to the Unix basename command. Trailing directory separators are ignored. Syntax: `basename(path[,ext])` Example: `basename('/test/something.html', '.html')`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
