@@ -1,0 +1,20 @@
+{
+  "name": "rawnodeapiproject",
+  "version": "1.0.0",
+  "description": "It's my first learing project of Node. Which is learing from \"Learn With Sumit Youtube Channel\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abu Jafor Mohammad Saleh",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2"
+  }
+}

@@ -1,4 +1,6 @@
-console.log("First Run")
+const _ = require("lodash")
+
+    console.log("First Run"); 
 
 // actually console.log("First Run") is wrapped into a function such way
 
@@ -10,3 +12,5 @@ console.log(__filename)
 console.log(__dirname)
 console.log(module)
 console.log(exports)
+
+console.log(_.last([1,2,4]))
