@@ -4,7 +4,8 @@
   "description": "It's my first learing project of Node. Which is learing from \"Learn With Sumit Youtube Channel\"",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index",
+    "start": "NODE_ENV=staging nodemon index",
+    "production": "NODE_ENV=production nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Abu Jafor Mohammad Saleh",
