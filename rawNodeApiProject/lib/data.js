@@ -1,8 +1,8 @@
 /*
  * Title: Data Library
  * Description: Data Library functions for CRUD
- * Author: Sumit Saha ( Learn with Sumit )
- * Date: 11/20/2020
+ * Author: Abu Jafor Mohammad Saleh
+ * Date: 20/04/2022
  *
  */
 
@@ -18,7 +18,6 @@ lib.basedir = path.join(__dirname, '/../.data/');
 
 // write data to file
 lib.create = (dir, file, data, callback) => {
-    console.log('here');
     // open file for writing
     fs.open(`${lib.basedir + dir}/${file}.json`, 'wx', (err, fileDescriptor) => {
         if (!err && fileDescriptor) {
@@ -83,7 +82,7 @@ lib.update = (dir, file, data, callback) => {
                 }
             });
         } else {
-            console.log('Error updating. File may not exist');
+            console.log(`Error updating. File may not exist`);
         }
     });
 };
@@ -95,7 +94,7 @@ lib.delete = (dir, file, callback) => {
         if (!err) {
             callback(false);
         } else {
-            callback('Error deleting file');
+            callback(`Error deleting file`);
         }
     });
 };
